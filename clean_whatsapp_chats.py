@@ -4,7 +4,7 @@ import sys
 
 chat_file = sys.argv[1]
 
-f = open(chat_file,'r')
+f = open(chat_file,'r', encoding="utf8")
 content = f.readlines()
 all_text = []
 your_sents = []
