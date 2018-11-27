@@ -47,12 +47,6 @@ f = open('res/dilogues.p','wb')
 pickle.dump(prev_pr_to_sp,f)
 f.close()
 
-
-f = open('res/dilogues.p','wb')
-pickle.dump(prev_pr_to_sp,f)
-f.close()
-
-
 f = open('res/your_sents.p','wb')
 pickle.dump(your_sents,f)
 f.close()
