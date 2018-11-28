@@ -10,8 +10,8 @@ all_text = []
 your_sents = []
 other_sents = []
 
-YOUR_NAME = 'Spandan Madan'
-OTHER_NAME = 'Pragya Maini'
+YOUR_NAME = 'YOUR NAME HERE'
+OTHER_NAME = 'OTHER NAME HERE'
 
 prev_pr_to_sp = {}
 prev = None
@@ -42,6 +42,9 @@ for line in content[1:]:
 			your_sents[-1] += line
 		elif prev == 'pr':
 			other_sents[-1] += line
+
+if not os.path.isdir('res'):
+	os.mkdir('res')
 
 f = open('res/dilogues.p','wb')
 pickle.dump(prev_pr_to_sp,f)
