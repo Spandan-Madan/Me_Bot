@@ -12,3 +12,5 @@ Instructions:-
 3. Run the prepare_files.ipynb ipython notebook.
 
 4. Run the Me_Bot.ipynb file and you can play with the bot at the bottom!
+
+NOTE - Actively seeking collaborators for fun side projects like this. If you're itnerested, please drop me a mail at smadan@mit.edu
