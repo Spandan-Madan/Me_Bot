@@ -22,4 +22,9 @@ Basically, if you have a iPhone, there are the steps to get the database file:
 2. Use iTools to open the backup file and get a copy of your database file named MM.sqlite
 3. run `python clean_wechat_chats.py YOUR_DATABASE_PATH YOUR_FRIEND_ID`
 
-find more detail information about this [here](https://www.cnblogs.com/cxun/p/5677606.html)
+Find more detail information about this [here](https://www.cnblogs.com/cxun/p/5677606.html)
+
+![MM.sqlite](https://github.com/DH-Diego/Me_Bot/blob/master/pictures/MM.sqlite.png)
+
+This is the database, each table starts with 'Chat_' corresponding to a chat history with a friend,  you need to find the table id you want to generate the chat robot to run the script above. Currently only English chat is supported, Chinese version is under constructing.
+
