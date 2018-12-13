@@ -14,3 +14,12 @@ Instructions:-
 4. Run the Me_Bot.ipynb file and you can play with the bot at the bottom!
 
 NOTE - Actively seeking collaborators for fun side projects like this. If you're itnerested, please drop me a mail at smadan@mit.edu
+
+## For wechat user:
+Wechat chat history is save in SQLite Database, therefore you need to export from you Phone.
+Basically, if you have a iPhone, there are the steps to get the database file:
+1. Use iTunes to backup your phone (unselect encrypt backup)
+2. Use iTools to open the backup file and get a copy of your database file named MM.sqlite
+3. run `python clean_wechat_chats.py YOUR_DATABASE_PATH YOUR_FRIEND_ID`
+
+find more detail information about this [here](https://www.cnblogs.com/cxun/p/5677606.html)
