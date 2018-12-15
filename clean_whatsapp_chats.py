@@ -43,23 +43,24 @@ for line in content[1:]:
 		elif prev == 'pr':
 			other_sents[-1] += line
 
-if not os.path.isdir('res'):
-	os.mkdir('res')
+if not os.path.isdir('res/whatsapp'):
+	if not os.path.isdir('res'):
+		os.mkdir('res')
+	os.mkdir('res/whatsapp')
 
-f = open('res/dilogues.p','wb')
-pickle.dump(prev_pr_to_sp,f)
+
+f = open('res/whatsapp/dilogues.p', 'wb')
+pickle.dump(prev_pr_to_sp, f)
 f.close()
 
-
-f = open('res/dilogues.p','wb')
-pickle.dump(prev_pr_to_sp,f)
+f = open('res/whatsapp/all_text.p', 'wb')
+pickle.dump(all_text, f)
 f.close()
 
-
-f = open('res/your_sents.p','wb')
-pickle.dump(your_sents,f)
+f = open('res/whatsapp/your_sents.p', 'wb')
+pickle.dump(your_sents, f)
 f.close()
 
-f = open('res/other_sents.p','wb')
-pickle.dump(other_sents,f)
+f = open('res/whatsapp/other_sents.p', 'wb')
+pickle.dump(other_sents, f)
 f.close()
