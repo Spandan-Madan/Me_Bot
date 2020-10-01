@@ -16,9 +16,9 @@ OTHER_NAME = 'OTHER NAME HERE'
 prev_pr_to_sp = {}
 prev = None
 for line in content[1:]:
-	if 'Missed Voice Call' in line:
+	if 'Missed voice call' in line or 'Missed video call' in line or 'Missed group voice call' in line or 'Missed group video call' in line:
 		continue
-	if 'image omitted' in line:
+	if 'Media omitted' in line:
 		continue
 	if ' %s: '%YOUR_NAME in line:
 		text = line.split(' %s: '%YOUR_NAME)[-1]
